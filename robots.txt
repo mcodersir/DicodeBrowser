@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mcodersir.github.io/DicodeBrowser/sitemap.xml
