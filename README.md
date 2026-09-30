@@ -15,7 +15,7 @@
 
 ## تصاویر محیط برنامه
 
-![خانهٔ مرورگر دیکد در نسخهٔ دسکتاپ](docs/screenshots/browser-home.jpg)
+![نمای کامل مرورگر دیکد در نسخهٔ دسکتاپ](assets/browser-home.png)
 
 <p align="center">
   <img src="docs/screenshots/browser-mobile.png" alt="پنل مرورگر در اندروید" width="390">
@@ -37,6 +37,13 @@
 | macOS — Intel | [بستهٔ x86_64](https://github.com/mcodersir/DicodeBrowser/releases/download/v1.0.2/DicodeBrowser-macOS-x86_64-v1.0.2.zip) |
 
 برای بررسی سلامت فایل‌ها، [فهرست SHA-256](https://github.com/mcodersir/DicodeBrowser/releases/download/v1.0.2/SHA256SUMS-v1.0.2.txt) را هم دریافت کنید. بسته‌های macOS فعلاً امضای توسعه‌دهنده و notarization اپل ندارند.
+
+### راهنمای انتخاب و نصب
+
+- **Windows — پیشنهاد ما:** فایل Setup با پسوند EXE را بگیر و اجرا کن؛ نصب فقط برای حساب کاربری فعلی انجام می‌شود. برای نسخهٔ بدون نصب، ZIP را کامل استخراج کن و `dicode_browser.exe` را از پوشهٔ استخراج‌شده اجرا کن؛ فایل‌های DLL و پوشهٔ `data` را جابه‌جا یا حذف نکن.
+- **Android:** ARM64 برای بیشتر گوشی‌های جدید است؛ `armeabi-v7a` برای گوشی‌های قدیمی ۳۲ بیتی و `x86_64` برای شبیه‌سازها و دستگاه‌های x86_64.
+- **Linux:** بستهٔ `tar.gz` را استخراج کن و فایل `dicode_browser` را از داخل پوشه اجرا کن.
+- **macOS:** برای پردازنده‌های سری M نسخهٔ Apple Silicon و برای مک‌های Intel نسخهٔ x86_64 را بگیر؛ در اجرای اول ممکن است macOS تأیید بخواهد.
 
 ## دربارهٔ این مخزن
 
