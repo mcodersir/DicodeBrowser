@@ -2,7 +2,7 @@
   <img src="assets/dicode-icon.png" alt="Dicode Browser" width="104" height="104">
 </p>
 
-<h1 align="center">مرورگر دیکود | Dicode Browser</h1>
+<h1 align="center">مرورگر دیکد | Dicode Browser</h1>
 
 <p align="center" dir="rtl">
   مرورگری فارسی‌محور برای وب‌گردی روزانه؛ با نسخه‌های اندروید و دسکتاپ.
@@ -15,7 +15,7 @@
 
 ## تصاویر محیط برنامه
 
-![خانهٔ مرورگر دیکود در نسخهٔ دسکتاپ](docs/screenshots/browser-home.jpg)
+![خانهٔ مرورگر دیکد در نسخهٔ دسکتاپ](docs/screenshots/browser-home.jpg)
 
 <p align="center">
   <img src="docs/screenshots/browser-mobile.png" alt="پنل مرورگر در اندروید" width="390">
