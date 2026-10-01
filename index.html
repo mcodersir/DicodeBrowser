@@ -25,7 +25,7 @@
     <meta name="twitter:image" content="https://mcodersir.github.io/DicodeBrowser/assets/browser-home.png">
     <link rel="icon" type="image/png" href="assets/dicode-icon.png">
     <link rel="preload" href="assets/vazir-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/styles.css?v=7">
+    <link rel="stylesheet" href="assets/styles.css?v=8">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -41,10 +41,11 @@
         "url": "https://mcodersir.github.io/DicodeBrowser/"
       }
     </script>
-    <script defer src="assets/site.js"></script>
+    <script defer src="assets/site.js?v=8"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Dicode Browser — خانه">
         <img src="assets/dicode-brand-horizontal.png" alt="" width="224" height="62">
@@ -65,84 +66,92 @@
 
     <main id="main">
       <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy">
+        <div class="hero-copy" data-reveal="right">
           <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> مرورگر دیکد <span class="eyebrow-divider">·</span> نسخهٔ ۱.۰.۲</p>
-          <h1 id="hero-title">وب‌گردیِ هرروزه، <span>روی روالِ خودت.</span></h1>
-          <p class="hero-description">جست‌وجو، تب‌ها، ویجت‌های خانه و ابزارهای وب؛ مرتب و یک‌جا، با حال‌وهوایی که خودت انتخاب می‌کنی.</p>
+          <h1 id="hero-title">وب‌گردی، <span>همون‌جوری که حال می‌کنی.</span></h1>
+          <p class="hero-description">تب‌هات، ویجت‌های نیوتب و ابزارهای دم‌دستی؛ همه یه‌جا، مرتب و به سلیقهٔ خودت.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#downloads">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"></path></svg>
-              دریافت دیکد
+              دانلود دیکد
             </a>
             <a class="button button-quiet" href="https://github.com/mcodersir/DicodeBrowser/releases/tag/v1.0.2" target="_blank" rel="noopener noreferrer">
-              تغییرات نسخه
+              چی عوض شده؟
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6m-.5-5.5L10 14M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"></path></svg>
             </a>
           </div>
-          <p class="hero-note"><span class="status-mark" aria-hidden="true"></span> نسخهٔ ۱.۰.۲ · Android، Windows، Linux و macOS</p>
+          <p class="hero-note"><span class="status-mark" aria-hidden="true"></span> برای Android، Windows، Linux و macOS</p>
         </div>
-        <figure class="hero-visual">
+        <figure class="hero-visual" data-reveal="left">
           <div class="preview-window">
             <div class="preview-topline" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
             <img src="assets/browser-home.png" alt="نمای کامل صفحهٔ خانهٔ مرورگر دیکد در نسخهٔ دسکتاپ، همراه با نوار ابزار، جست‌وجو و ویجت‌ها" width="2101" height="1315" fetchpriority="high">
           </div>
-          <figcaption><span>خانهٔ مرورگر</span><span>نمایی از نسخهٔ دسکتاپ</span></figcaption>
+          <div class="preview-float-note preview-float-note-tabs" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="3"></rect><path d="M3.5 9h17M8 6.5h.01"></path></svg>
+            <span><strong>تب‌هات، مرتب</strong><small>همون‌جوری که دوست داری</small></span>
+          </div>
+          <div class="preview-float-note preview-float-note-home" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12m-8.48 8.48-2.12 2.12"></path><circle cx="12" cy="12" r="4"></circle></svg>
+            <span><strong>نیوتب مال خودته</strong><small>ویجت و میانبر بچین</small></span>
+          </div>
+          <figcaption><span>خانهٔ مرورگر</span><span>یه گوشه از دیکد روی دسکتاپ</span></figcaption>
         </figure>
       </section>
 
       <section class="feature-strip section-wrap" id="features" aria-labelledby="features-title">
-        <div class="section-heading">
-          <p class="eyebrow">همراهِ وب‌گردی هر روز</p>
-          <h2 id="features-title">هر چیزی سرِ جای خودش.</h2>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">یه مرورگر جمع‌وجور برای هر روز</p>
+          <h2 id="features-title">همه‌چی دمِ دستته.</h2>
         </div>
         <div class="feature-grid">
-          <article class="feature-card">
+          <article class="feature-card" data-reveal>
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3"></rect><path d="M3.5 9h17M7.5 6.5h.01M10.5 6.5h.01"></path></svg>
-            <h3>تب‌ها، مرتب و دمِ دست</h3>
-            <p>صفحه‌های باز را راحت پیدا کن و بی‌دردسر بینشان جابه‌جا شو.</p>
+            <h3>تب‌هات رو هرجوری دوست داری بچین</h3>
+            <p>صفحه‌های بازت رو راحت پیدا کن و همون‌جوری که می‌خوای مرتبشون کن.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card" data-reveal>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12m-8.48 8.48-2.12 2.12"></path><circle cx="12" cy="12" r="4"></circle></svg>
-            <h3>خانه‌ای که مالِ خودته</h3>
-            <p>ویجت‌ها و میانبرها را بچین؛ صفحهٔ آغازینت را مطابق سلیقه‌ات بساز.</p>
+            <h3>یه نیوتب واسه خودت</h3>
+            <p>ویجت‌ها و میانبرهای به‌دردبخورت رو بچین؛ صفحهٔ خونه‌ت مال خودته.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card" data-reveal>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 8.5 12 5l3.5 3.5M12 5v9m-6 2.5h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2Zm0 0v3h12v-3"></path></svg>
-            <h3>ابزار، درست کنار وب</h3>
-            <p>از افزونه‌ها و دانلودها تا ابزارهای وب؛ هر وقت لازم شد، همان‌جا سراغشان برو.</p>
+            <h3>ابزارها دمِ دستتن</h3>
+            <p>دانلود، افزونه یا ابزار وب؟ همون‌جا که لازم داری سراغشون برو.</p>
           </article>
         </div>
       </section>
 
       <section class="showcase section-wrap" id="showcase" aria-labelledby="showcase-title">
-        <div class="showcase-intro">
-          <p class="eyebrow">از نزدیک ببین</p>
-          <h2 id="showcase-title">از صفحهٔ خانه تا ابزارها.</h2>
-          <p>یک نگاه به مرورگر دیکد روی Android و پنل تنظیمات و ابزارهای دسکتاپ.</p>
+        <div class="showcase-intro" data-reveal="right">
+          <p class="eyebrow">یه نگاه بنداز</p>
+          <h2 id="showcase-title">دیکد رو از نزدیک ببین.</h2>
+          <p>هم روی گوشی، هم دسکتاپ؛ ببین صفحهٔ خونه و ابزارها چه شکلی‌ان.</p>
         </div>
         <div class="showcase-grid">
-          <figure class="showcase-card showcase-mobile">
+          <figure class="showcase-card showcase-mobile" data-reveal>
             <img src="assets/browser-mobile.png" alt="پنل مرورگر دیکد در اندروید، شامل میانبرهای تب و فهرست افزونه‌ها" width="809" height="1072" loading="lazy">
-            <figcaption><span>روی گوشی</span><span>مرورگر دیکد برای Android</span></figcaption>
+            <figcaption><span>روی گوشی</span><span>نسخهٔ Android</span></figcaption>
           </figure>
-          <figure class="showcase-card showcase-tools">
+          <figure class="showcase-card showcase-tools" data-reveal>
             <img src="assets/browser-tools.png" alt="صفحهٔ ابزارها و تنظیمات مرورگر دیکد با رابط فارسی و تیره" width="1178" height="838" loading="lazy">
-            <figcaption><span>تنظیمات و ابزارها</span><span>همه‌چیز، زیرِ دستت</span></figcaption>
+            <figcaption><span>تنظیمات و ابزارها</span><span>نسخهٔ دسکتاپ</span></figcaption>
           </figure>
         </div>
       </section>
 
       <section class="downloads section-wrap" id="downloads" aria-labelledby="downloads-title">
-        <div class="downloads-heading">
+        <div class="downloads-heading" data-reveal>
           <div>
-            <p class="eyebrow">همهٔ فایل‌های نسخهٔ ۱.۰.۲</p>
-            <h2 id="downloads-title">نسخهٔ مناسب دستگاهت را پیدا کن.</h2>
+            <p class="eyebrow">همهٔ نسخه‌های ۱.۰.۲</p>
+            <h2 id="downloads-title">نسخهٔ دستگاهت رو همین‌جا پیدا کن.</h2>
           </div>
           <a class="all-releases" href="https://github.com/mcodersir/DicodeBrowser/releases/tag/v1.0.2" target="_blank" rel="noopener noreferrer">فایل‌ها و تغییرات نسخه</a>
         </div>
-        <p class="download-guide"><span>۱</span> سیستم‌عاملت را انتخاب کن <span class="download-guide-arrow" aria-hidden="true">←</span> <span>۲</span> گزینهٔ مناسب را بخوان <span class="download-guide-arrow" aria-hidden="true">←</span> <span>۳</span> دکمهٔ دانلود را بزن</p>
+        <p class="download-guide" data-reveal><span>۱</span> سیستم‌عاملت رو پیدا کن <span class="download-guide-arrow" aria-hidden="true">←</span> <span>۲</span> نسخهٔ مناسب رو انتخاب کن <span class="download-guide-arrow" aria-hidden="true">←</span> <span>۳</span> دانلودش کن</p>
         <div class="download-grid">
-          <article class="download-card">
+          <article class="download-card" data-reveal>
             <div class="download-card-heading">
               <div class="download-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H4zM8 20h8m-4-3.5V20"></path></svg></div>
               <div class="download-copy"><h3>Windows</h3><p>برای رایانه‌های ۶۴ بیتی</p></div>
@@ -157,7 +166,7 @@
             </div>
           </article>
 
-          <article class="download-card">
+          <article class="download-card" data-reveal>
             <div class="download-card-heading">
               <div class="download-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 8.5h9a3 3 0 0 1 2.9 2.2l1.1 4.1a2 2 0 0 1-3.2 2l-1.8-1.3h-7l-1.8 1.3a2 2 0 0 1-3.2-2l1.1-4.1a3 3 0 0 1 2.9-2.2Z"></path><path d="M8 11.5v3m-1.5-1.5h3m7-1h.01m2 2h.01"></path></svg></div>
               <div class="download-copy"><h3>Android</h3><p>برای بیشتر گوشی‌ها، گزینهٔ پیشنهادی ARM64 است</p></div>
@@ -175,7 +184,7 @@
             </div>
           </article>
 
-          <article class="download-card">
+          <article class="download-card" data-reveal>
             <div class="download-card-heading">
               <div class="download-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18m-6-4 12-10M6 7l12 10M4 12h16"></path></svg></div>
               <div class="download-copy"><h3>Linux</h3><p>برای رایانه‌های ۶۴ بیتی</p></div>
@@ -187,7 +196,7 @@
             </div>
           </article>
 
-          <article class="download-card">
+          <article class="download-card" data-reveal>
             <div class="download-card-heading">
               <div class="download-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.8 12.6c0 3.2 2.8 4.3 2.8 4.3s-1.7 4.8-4 4.8c-1 0-1.8-.7-3-.7s-2 .7-3 .7c-2.3 0-5.4-5.1-5.4-9.4 0-3.8 2.4-6.2 5-6.2 1.3 0 2.3.8 3.2.8s1.8-.8 3.5-.8c.7 0 2.7.1 4 2.1-.1.1-3.1 1.8-3.1 4.4ZM14 3.4c.7-.9 1.9-1.5 3-1.6.1 1.2-.4 2.4-1.1 3.2-.8.9-2 1.5-3.1 1.4-.1-1.1.5-2.2 1.2-3Z"></path></svg></div>
               <div class="download-copy"><h3>macOS</h3><p>از «دربارهٔ این مک» نوع پردازنده را ببین</p></div>
@@ -202,7 +211,7 @@
             </div>
           </article>
         </div>
-        <div class="download-footnote">
+        <div class="download-footnote" data-reveal>
           <span>تنظیمات مرورگر با نصب نسخهٔ جدید Windows باقی می‌ماند. نصب‌کنندهٔ Windows امضای دیجیتال ندارد و ممکن است SmartScreen هشدار بدهد.</span>
           <span>نسخه‌های macOS امضا و notarize نشده‌اند؛ ممکن است هنگام اجرای نخست تأیید بخواهند.</span>
           <a href="https://github.com/mcodersir/DicodeBrowser/releases/download/v1.0.2/SHA256SUMS-v1.0.2.txt" target="_blank" rel="noopener noreferrer">فهرست SHA-256 همهٔ فایل‌ها</a>
@@ -212,7 +221,7 @@
 
     <footer class="site-footer section-wrap">
       <a class="footer-brand" href="#top"><img src="assets/dicode-brand-horizontal.png" alt="Dicode Browser" width="224" height="62"></a>
-      <p>مرورگر دیکد · همراهِ وب‌گردی هر روز</p>
+      <p>مرورگر دیکد · هم‌قدمِ وب‌گردی هر روزت</p>
       <a href="https://github.com/mcodersir/DicodeBrowser" target="_blank" rel="noopener noreferrer">مخزن انتشار در GitHub</a>
     </footer>
   </body>
