@@ -200,6 +200,21 @@ h2 { margin-bottom: 0; font-size: clamp(1.75rem, 3.3vw, 2.55rem); letter-spacing
   .site-footer > a:last-child { order: 2; }
 }
 
+@media (max-width: 360px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "brand actions" "nav nav";
+    gap: 4px 10px;
+    min-height: 0;
+    padding: 9px 12px;
+  }
+  .brand { grid-area: brand; }
+  .main-nav { grid-area: nav; justify-content: space-between; width: 100%; gap: 8px; margin: 0; font-size: .75rem; }
+  .header-actions { grid-area: actions; }
+  .theme-toggle { width: 36px; height: 36px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
