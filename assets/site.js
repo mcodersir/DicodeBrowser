@@ -8,7 +8,7 @@
     root.dataset.theme = theme;
     toggle.setAttribute("aria-pressed", String(theme === "light"));
     toggle.setAttribute("aria-label", theme === "light" ? "تغییر به تم تیره" : "تغییر به تم روشن");
-    document.querySelector('meta[name="theme-color"]').content = theme === "light" ? "#f7f4ee" : "#0c1113";
+    document.querySelector('meta[name="theme-color"]').content = theme === "light" ? "#f5f6f9" : "#10131b";
     if (persist) localStorage.setItem("dicode-site-theme", theme);
   }
 
